@@ -22,3 +22,20 @@ si el resultado es positivo, negativo o cero.
 
 print('Ejercicios de práctica con números')
 # Empezar aquí la resolución del ejercicio
+
+numero_1 = int(input('Indique un número:'))
+numero_2 = int(input('Indique otro número:'))
+
+if numero_1 > 0:
+    print('{} es positivo'.format(numero_1))
+elif numero_1 < 0:
+    print('{} es negativo'.format(numero_1))
+else:
+    print('{} es igual a cero'.format(numero_1))
+
+if numero_2 > 0:
+    print('{} es positivo'.format(numero_2))
+elif numero_2 < 0:
+    print('{} es negativo'.format(numero_2))
+else:
+    print('{} es igual a cero'.format(numero_2))

@@ -33,3 +33,60 @@ contenido.
 
 print('Ejercicios de práctica con cadenas')
 # Empezar aquí la resolución del ejercicio
+
+texto_1 = str(input('Ingrese una palabra: '))
+texto_2 = str(input('Ingrese una palabra: '))
+texto_3 = str(input('Ingrese una palabra: '))
+
+orden = int(input('Ingrese numero 1 Para orden alfabetico o numero 2 para cantidad de letras: '))
+
+if orden == 1:
+    if texto_1 > texto_2 and texto_1 > texto_3:
+        if texto_1 > texto_2 and texto_2 > texto_3:
+            print('{} n/ {} n/ {}'.format(texto_1, texto_2, texto_3))
+        else:
+            print('{} n/ {} n/ {}'.format(texto_1, texto_3, texto_2))
+    if texto_2 > texto_1 and texto_2 > texto_3:
+        if texto_2 > texto_3 and texto_2 > texto_1:
+            print('{} {} {}'.format(texto_2, texto_1, texto_3))
+        else: 
+            print('{} {} {}'.format(texto_2,texto_3,texto_1))
+    if texto_3 > texto_1 and texto_3 > texto_2:
+        if texto_3 > texto_2 and texto_3 > texto_1:
+            print(' {} {} {}'.format(texto_3,texto_1,texto_2))
+        else:
+            print('{} {} {}'.format(texto_3,texto_2, texto_1))
+
+if orden == 2: 
+    if len(texto_1) > len(texto_2) and len(texto_1) > len(texto_3):
+        if len(texto_1) > len(texto_2) and len(texto_2) > len(texto_3):
+            print('{} {} {}'.format(texto_1, texto_2,texto_3))
+        else:
+             print('{} {} {}'.format(texto_1,texto_3,texto_2))
+    if len(texto_2) > len(texto_1) and len(texto_2) > len(texto_3):
+        if len(texto_2) > len(texto_3) and len(texto_2) > len(texto_1):
+            print('{} {} {}'.format(texto_2,texto_1,texto_3))
+        else:
+            print('{} {} {}'.format(texto_2,texto_3,texto_1))
+    if len(texto_3) > len(texto_1) and len(texto_3) > len(texto_2):
+        if len(texto_3) > len(texto_2) and len(texto_3) > len(texto_1):
+            print('{} {} {}'.format(texto_3,texto_1,texto_2))
+        else:
+            print('{} {} {}'.format(texto_3,texto_2,texto_1))
+
+
+
+    
+
+
+
+     
+
+
+    
+        
+    
+
+
+
+
